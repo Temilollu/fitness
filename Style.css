@@ -1,0 +1,402 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  color: white;
+  background: url("images/banner.jpg") center center fixed;
+  height: 100vh;
+}
+header .logo {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+}
+header #hamburger {
+  padding: 0.5rem;
+  border: 1px solid white;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+header .main-header-content {
+  position: absolute;
+  left: 18%;
+  bottom: 20%;
+  font-size: 22px;
+}
+header .nav-mod {
+  display: none;
+  position: absolute;
+  top: 13%;
+  left: 6%;
+  background: rgba(255, 255, 255, 0.1);
+  width: 90%;
+}
+header .nav-mod p {
+  padding: 0.5rem;
+  margin-bottom: 1.3rem;
+}
+header .right-quote {
+  position: absolute;
+  top: 58%;
+  left: 5%;
+}
+header .left-quote {
+  position: absolute;
+  right: 5%;
+  top: 75%;
+}
+header .buttons {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 18%;
+}
+header .buttons p {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.main-section {
+  background: url("images/about-bg.jpg");
+  padding: 2rem 1rem;
+  height: 96vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-section h1 {
+  margin: 0.5rem 0;
+  font-size: 30px;
+}
+.main-section p {
+  margin: 0.5rem 0;
+}
+.main-section h2 {
+  margin: 0.5rem 0;
+}
+.main-section img {
+  max-width: 300px;
+  margin: 1rem 2rem;
+}
+
+.about {
+  padding: 3rem 1rem;
+  background: url("images/about-us-bg.jpg") fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+.about p {
+  color: white;
+}
+.about .learn {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.rode-gym {
+  padding: 1rem;
+  background-color: #464646;
+}
+.rode-gym img {
+  width: 100%;
+}
+.rode-gym p {
+  background: url("images/gym-girls.jpg") center center;
+  background-size: cover;
+  text-align: center;
+  padding: 1.5rem;
+  color: white;
+  font-size: 20px;
+}
+
+.fitness {
+  background: url("images/gym2.jpg") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 50% top 10%;
+  height: 90vh;
+  position: relative;
+  color: white;
+}
+.fitness .trainers {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.979);
+  width: 100%;
+  height: 200px;
+  padding-bottom: 0;
+}
+.fitness .trainers .right-quote-white {
+  position: absolute;
+  top: 1%;
+  left: 20%;
+}
+.fitness .trainers .left-quote-white {
+  position: absolute;
+  top: 5%;
+  right: 20%;
+}
+.fitness .trainers h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+.fitness section {
+  display: flex;
+  flex-direction: column;
+}
+.fitness section .woman {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8%;
+}
+.fitness section .woman img {
+  border-radius: 50%;
+  width: 250px;
+}
+.fitness section p {
+  text-align: center;
+  padding: 0 2rem;
+  margin-top: 1rem;
+}
+.fitness section .man {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 80%;
+}
+.fitness section .man img {
+  border-radius: 50%;
+  width: 250px;
+}
+
+.empty {
+  background-color: rgba(0, 0, 0, 0.979);
+  width: 100%;
+  height: 300px;
+}
+
+.flexing {
+  margin: 1rem 0;
+  padding: 0 2rem;
+  background-color: #464646;
+  color: white;
+}
+.flexing .flexing-div {
+  display: flex;
+  flex-direction: column;
+}
+.flexing .flexing-div p {
+  padding: 0.5rem;
+  background-color: #ff8013;
+  margin: 1rem 0;
+  font-size: 22px;
+}
+.flexing .flexing-div img {
+  margin: 0.5rem 0;
+}
+.flexing .flexing-div span {
+  color: #212529;
+}
+
+footer {
+  padding: 2rem;
+  background-color: #101011;
+  color: white;
+}
+footer form {
+  margin: 1rem 0;
+  padding: 3rem;
+  background-color: white;
+  height: 60vh;
+}
+footer form h2 {
+  color: #ff8013;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+footer form button {
+  padding: 0.2rem 1.5rem;
+  font-size: 17px;
+  margin: 0 auto;
+  background-color: #343a40;
+  outline: none;
+  margin: 0 5rem;
+  border-style: none;
+}
+footer input {
+  margin: 2rem 0;
+  border-style: none;
+  border-bottom: 2px solid black;
+  font-size: 22px;
+}
+footer #name {
+  margin: 0;
+  width: 42.5%;
+  margin-right: 1rem;
+}
+footer #email {
+  margin: 0;
+  width: 43%;
+}
+footer #address {
+  display: block;
+  width: 90%;
+}
+footer #messages {
+  display: block;
+  width: 90%;
+}
+footer .reach-us p {
+  margin: 1rem 0;
+}
+
+.nav {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  #hamburger {
+    display: none;
+  }
+
+  header .main-header-content {
+    left: 10%;
+    bottom: 23%;
+  }
+
+  header .left-quote {
+    right: 65%;
+  }
+
+  header .buttons {
+    left: 10%;
+  }
+
+  .main-header .nav {
+    position: absolute;
+    top: 7%;
+    right: 9%;
+    display: flex;
+  }
+  .main-header .nav p {
+    margin-right: 1rem;
+  }
+
+  .main-section {
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+  }
+  .main-section h4 {
+    width: 500px;
+  }
+
+  .about div {
+    width: 800px;
+    float: right;
+    padding: 0.7rem 8rem;
+  }
+
+  .rode-gym {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    padding: 0.7rem 8.7rem;
+  }
+  .rode-gym p {
+    width: 700px;
+    height: 300px;
+    padding-top: 7rem;
+  }
+  .rode-gym img {
+    width: 400px;
+    position: relative;
+    top: -100px;
+  }
+
+  .fitness {
+    margin: 0.7rem 8.7rem;
+  }
+  .fitness .trainers {
+    background: none;
+  }
+  .fitness .trainers .left-quote-white {
+    right: 40%;
+  }
+  .fitness .trainers .right-quote-white {
+    left: 40%;
+  }
+  .fitness section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .fitness section .man {
+    position: relative;
+    top: -170px;
+    right: 40px;
+  }
+  .fitness section .woman {
+    position: relative;
+    top: -170px;
+    left: 40px;
+  }
+  .fitness section p {
+    width: 350px;
+  }
+
+  .empty {
+    display: none;
+  }
+
+  .flexing {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7rem 8.7rem;
+  }
+  .flexing .flexing-div {
+    margin-right: 1rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.7rem 8.7rem;
+  }
+  footer p {
+    width: 300px;
+    margin: 1rem 1rem;
+  }
+  footer form {
+    width: 400px;
+    height: 55vh;
+  }
+}
+.show {
+  display: block !important;
+}
+
+/*# sourceMappingURL=Style.css.map */
